@@ -16,8 +16,4 @@ public class StringTest {
         string.contains("=");
     }
 
-    @Test
-    public void assertThatStringUtilsContainsEqualInNull_isFalse() throws Exception {
-        assertThat(StringUtils.contains(null, "="), is(false));
-    }
 }
