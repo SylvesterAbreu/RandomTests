@@ -1,5 +1,6 @@
 package test;
 
+import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -13,5 +14,10 @@ public class StringTest {
         final String string = null;
 
         string.contains("=");
+    }
+
+    @Test
+    public void assertThatStringUtilsContainsEqualInNull_isFalse() throws Exception {
+        assertThat(StringUtils.contains(null, "="), is(false));
     }
 }
