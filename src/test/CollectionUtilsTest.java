@@ -11,12 +11,12 @@ public class CollectionUtilsTest {
 
 
     @Test
-    public void assertThatListCanNotHaveNullReferences() throws Exception {
+    public void assertThatCollectionContainsNullReference() throws Exception {
 
         List<String> nullReferencesCollection = new ArrayList<>();
         nullReferencesCollection.add(null);
         nullReferencesCollection.add(null);
 
-        assertTrue(CollectionUtils.isNotEmpty(nullReferencesCollection));
+        assertTrue(nullReferencesCollection.contains(null));
     }
 }
