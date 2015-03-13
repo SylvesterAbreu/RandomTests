@@ -1,5 +1,4 @@
 import org.apache.commons.lang.StringUtils;
-import org.hamcrest.core.Is;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.equalTo;
